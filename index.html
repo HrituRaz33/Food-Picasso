@@ -32,20 +32,20 @@
       
       <!-- search result end -->
       <!-- Meal Details content start -->
-      <div class="meal-details w-75 rounded-pill">
+      <div id="meal-details" class="meal-details w-75 rounded-pill">
         <div class="text-center">
           <button type="button" class="close-button mt-2">
             <i class="fa-solid fa-circle-xmark"></i>
           </button>
       </div>
       <div class="text-center w-100 mx-auto">
-        <h3>Meals name here:</h3>
-        <p class="category-name rounded mx-auto">Category Name</p>
+        <h3>${meal.strMeal}</h3>
+        <p class="category-name rounded mx-auto">&{meal.strCategory}</p>
         <h3>Instructions:</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio harum esse neque perspiciatis similique omnis quae animi vitae nihil temporibus magnam veritatis qui dolor magni quaerat sunt, eligendi impedit voluptatem. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum voluptas laborum dolorem minima facilis qui? Saepe, molestiae error. Obcaecati, doloremque? </p>
+        <p>${meal.strInstructions}</p>
       </div>
       <div class="text-center">
-        <img class="pic-size rounded-circle" src="img/n7qnkb1630444129.jpg" alt="">
+        <img class="pic-size rounded-circle" src="${meal.strMealThumb}" alt="">
       </div>
      <div class="text-center">
       <a class="btn p-0 btn-design rainbow rainbow-1 my-3" href="###">Watch Video</a>
