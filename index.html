@@ -21,45 +21,20 @@
         <h6 class="text-center"><i class="fa-solid fa-burger"></i> "People who love to eat are always the best people. <i class="fa-solid fa-pizza-slice"></i></h6>
     </div>
     <div class="input-group w-75 mx-auto my-2">
-        <input type="search" class="form-control rounded" placeholder="Enter food name" aria-label="Search" aria-describedby="search-addon" />
-        <button type="button" class="btn btn-outline-primary">search</button>
+        <input id="search-field" type="search" class="form-control rounded" placeholder="Enter food name" aria-label="Search" aria-describedby="search-addon" />
+        <button onclick="searchFood()" type="button" class="btn btn-outline-primary">search</button>
     </div>
     <div class="animate__animated animate__bounce animate__delay-2s">
         <h3 class="text-center my-3">Search your result:</h3>
     </div>
-    <div class="row mx-auto w-75">
-      <div class="col-4 col-md-4 col-12">
-        <div class="card">
-          <img src="img/n7qnkb1630444129.jpg" class="card-img-top" alt="...">
-            <h5>Potato Chips</h5>
-            <button class="btn-change4 rounded-3">Button</button>
-        </div>
-      </div>
-      <div class="col-4 col-md-4 col-12">
-        <div class="card">
-          <img src="img/nv5lf31628771380.jpg" class="card-img-top" alt="...">
-            <h5>Potato Chips</h5>
-            <button class="btn-change4 rounded-3">Button</button>
-        </div>
-      </div>
-      <div class="col-4 col-md-4 col-12">
-        <div class="card">
-          <img src="img/u9l7k81628771647.jpg" class="card-img-top" alt="...">
-            <h5>Potato Chips</h5>
-            <button class="btn-change4 rounded-3">Button</button>
-        </div>
-      </div>
-      <div class="col-4 col-md-4 col-12">
-        <div class="card">
-          <img src="img/n7qnkb1630444129.jpg" class="card-img-top" alt="...">
-            <h5>Potato Chips</h5>
-            <button class="btn-change4 rounded-3">Button</button>
-        </div>
-      </div>
+    <!-- search result start -->
+    <div id="search-result" class="row row-cols-1 row-cols-md-3 mx-auto w-75">
+      
+      <!-- search result end -->
       <!-- Meal Details content start -->
       <div class="meal-details w-75 rounded-pill">
         <div class="text-center">
-          <button type="button" class="close-button">
+          <button type="button" class="close-button mt-2">
             <i class="fa-solid fa-circle-xmark"></i>
           </button>
       </div>
@@ -78,15 +53,7 @@
       </div>
 <!-- Meal Details content end -->
     </div>
-      
-      <div id="search-result" class="row row-cols-1 row-cols-md-4 g-4">
-          
-      </div>
-      
-      
+    <!-- javascript file -->
+    <script src="JavaScript/app.js"></script>
 </body>
 </html>
-
-
-
-<a class="rainbow rainbow-1">Click Me!<a/>
