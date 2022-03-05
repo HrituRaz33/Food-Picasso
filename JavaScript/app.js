@@ -12,7 +12,7 @@ const searchFood=()=>{
 const displaySearchResult =(meals)=>{
     // console.log(meals)
     const searchResult= document.getElementById('search-result');
-    searchResult.innerHTML='';
+    // searchResult.innerHTML='';
     if(meals == null){
         // console.log(' We did not find');
         const div = document.createElement('div');
@@ -47,9 +47,11 @@ const loadMealDetail= (mealId) =>{
     .then (data =>displayMealDetails(data.meals[0]));
     }
 
+
     const displayMealDetails= (meal) =>{
-        console.log(meal);
-        const mealDetail = document.getElementById('meal-details');
+        // console.log(meal);
+        const mealDetail = document.getElementById('p');
+        console.log(meal.strCategory);
         const div = document.createElement('div');
         div.classList.add('card');
         div.innerHTML=`
@@ -60,7 +62,7 @@ const loadMealDetail= (mealId) =>{
     </div>
     <div class="text-center w-100 mx-auto">
       <h3>${meal.strMeal}</h3>
-      <p class="category-name rounded mx-auto">&{meal.strCategory}</p>
+      <p class="category-name rounded mx-auto">${meal.strCategory}</p>
       <h3>Instructions:</h3>
       <p>${meal.strInstructions}</p>
     </div>
