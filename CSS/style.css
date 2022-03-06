@@ -42,14 +42,14 @@
 }
 .meal-details{
     position: fixed;
-    top: 50%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
     background-color: orangered;
     height: 60%;
     overflow-y: scroll;
-    display: block;
+    display: none;
 }
 .close-button{
     background: #fff;
