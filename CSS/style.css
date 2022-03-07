@@ -46,7 +46,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    background-color: orangered;
+    background-color: orangered !important;
     height: 60%;
     overflow-y: scroll;
     display: none;

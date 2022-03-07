@@ -80,7 +80,7 @@ const loadMealDetail= (mealId) =>{
         const mealDetail = document.getElementById('p');
         console.log(meal.strInstructions);
         const div = document.createElement('div');
-        div.classList.add('card');
+        // div.classList.add('card');
         div.innerHTML=`
         <div class="text-center">
         <button type="button" class="close-button mt-2">
